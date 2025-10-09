@@ -1,17 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
 """
-bench_ollama_3stage.py  --  三段式流水线（Planner → QAR → Controlled Executor）
-生产级（强力全面对齐《融合版 vNext》与 §2.1–§2.3）
-
-要点：
-- 四口径 P95 并列：Raw/CO × Overall/Warm-only；主判以 CO（warm）口径；固定披露删失（KM/SLO-cap）。  [Spec §2.1.Bis/§2.3]
-- 右删失：timeout 记为 right_censored，产出 KM 分位与 SLO-cap 两套口径 + timeouts_rate/censoring_mode。 [Spec §2.1/§2.3]
-- 统计：HD 点估计 + BCa Bootstrap（B≥1000；近护栏/删失重/尾重建议 B=5k–10k；支持并行）。 [Spec §2.3]
-- FDR：家族 A/B/C（BH‑95 缺省 q=10%），导出 tests_family_{A,B,C}.csv。 [Spec §2.3.5]
-- 分层：最小 7 维 + 后分层权重；事件 Schema 补齐审计指纹（co_correction, tdigest_* , warmup_window_ms, billing_* 等）。 [Spec §2.1]
-- 可审计工件：metrics_summary.parquet/CSV、tests_family_*.csv、bootstrap_meta.json、seed_manifest.txt。 [Spec §2.3.8]
-
-参考规范：融合版 vNext + §2.1–§2.3（见工程内文档）。
 """
 
 from __future__ import annotations
