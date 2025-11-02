@@ -1,0 +1,77 @@
+{"id": 1, "gold": "相隔再远的粒子状态相关，测一知一。"}
+{"id": 2, "gold": "[{\"name\": \"李四\", \"score\": 95}, {\"name\": \"张三\", \"score\": 89}, {\"name\": \"王五\", \"score\": 76}]"}
+{"id": 3, "gold": "浪拍岸起雾，金光细碎如梦。"}
+{"id": 4, "gold": "def sort_desc(xs: list[float]) -> list[float]:\n    \"\"\"Return list in descending order\"\"\"\n    ys = list(xs)\n    ys = sorted(ys, reverse=True)\n    return ys"}
+{"id": 5, "gold": "还有些冷，要先驱寒。\n寒气未尽，得先祛寒。"}
+{"id": 6, "gold": "[{\"company\": \"小米公司\", \"date\": \"2025/10/01\"}, {\"company\": \"华星科技\", \"date\": \"2026年Q1\"}]"}
+{"id": 7, "gold": "- 兵马俑：震撼史迹\n- 华清宫：汤泉与传说\n- 回民街：小吃密集\n- 城墙：骑行观城\n- 大雁塔：厚重佛学\n- 陕西博物馆：文物精粹"}
+{"id": 8, "gold": "低轨卫星离地近，信号往返路径短，减少传播时延；星间链路直连，绕开拥塞地面骨干；就近接入与边缘缓存，缩短首包与重传延迟。配合智能路由与拥塞控制，整体链路延迟更稳定。"}
+{"id": 9, "gold": "regex: ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$\\nmatch: [user@mail.com, a.b+1@x.io, name_123@sub.dom.cn]\\nnomatch: [user@mail, @foo.com, name@]"}
+{"id": 10, "gold": "确认近期发布变更\n检查上游QPS与P95\n查看依赖超时\n核对实例负载\n分析慢查询"}
+{"id": 11, "gold": "{\"name\": \"张三\", \"age\": 28, \"city\": \"杭州\"}"}
+{"id": 12, "gold": "select user_id, count(*) as order_count from orders group by user_id order by order_count desc limit 3"}
+{"id": 13, "gold": "temperature：控制采样温度，越高越随机。\ntop_p：核采样累积概率阈值。"}
+{"id": 14, "gold": "{\"summary\": \"发版慢，但客服响应快\", \"sentiment\": \"neu\"}"}
+{"id": 15, "gold": "v1.10.0, v1.9.0, v1.8.5"}
+{"id": 16, "gold": "地球像穿了更厚外套，气温慢慢升温，极端天气更多，我们需要节能和多种树。"}
+{"id": 17, "gold": "风掀云缝，金色一点亮。"}
+{"id": 18, "gold": "软件没有银弹。\n做软件无万能解。"}
+{"id": 19, "gold": "- 设定番茄时段\n- 关闭消息提醒\n- 先纲后目"}
+{"id": 20, "gold": "print(f\"{a/b:.2f}\")"}
+{"id": 21, "gold": "{\"task\": \"daily_backup\", \"status\": \"running\", \"started_at\": \"2025-10-18T10:00:00Z\"}"}
+{"id": 22, "gold": "理解您的辛苦，我们已加急处理，请放心。"}
+{"id": 23, "gold": "select user_id, sum(amount) as total_amount from orders where created_at >= current_date - interval '7 day' group by user_id having sum(amount) > 1000 order by total_amount desc"}
+{"id": 24, "gold": "以航海比喻追理想，越困难仍有信心开辟前路。"}
+{"id": 25, "gold": "[{\"title\": \"围城\", \"author\": \"钱钟书\", \"year\": 1947}, {\"title\": \"百年孤独\", \"author\": \"加西亚·马尔克斯\", \"year\": 1967}, {\"title\": \"小王子\", \"author\": \"圣埃克苏佩里\", \"year\": 1943}]"}
+{"id": 26, "gold": "[{\"first\": \"Ada\", \"last\": \"Lovelace\"}, {\"first\": \"Alan\", \"last\": \"Turing\"}, {\"first\": \"Grace\", \"last\": \"Hopper\"}]"}
+{"id": 27, "gold": "def dedup_sort(xs):\n    return sorted(set(xs))"}
+{"id": 28, "gold": "regex: ^(?:\\d{3}[- ]?\\d{4}[- ]?\\d{4})$\\nmatch: [13800138000, 138-0013-8000, 138 0013 8000]\\nnomatch: [1380013800, 23800138000, 138001380000]"}
+{"id": 29, "gold": "登录问题"}
+{"id": 30, "gold": "你做得很好。\n继续稳步前进。\n有我在一起扛。"}
+{"id": 31, "gold": "{\"street\": \"No.88 West Rd\", \"city\": \"Hangzhou\", \"zip\": \"310000\"}"}
+{"id": 32, "gold": "{\"name\": \"Camera X\", \"price\": 2999.0, \"in_stock\": true}"}
+{"id": 33, "gold": "就近计算至终端，降低延迟与带宽占用；分布式管理与安全加固是挑战；适用于工控、车联网、AR渲染。"}
+{"id": 34, "gold": "[-1, 2, 3, 10]"}
+{"id": 35, "gold": "请把报告发给我，并备注版本与时间。"}
+{"id": 36, "gold": "select user_id, sum(amount) as total_amount from orders where created_at >= current_date - interval '7 day' group by user_id having sum(amount) > 1000 order by total_amount desc"}
+{"id": 37, "gold": "{\"city\": \"Beijing\", \"lat\": 39.9042, \"lng\": 116.4074}"}
+{"id": 38, "gold": "def to_snake_case(s: str) -> str:\n    s = re.sub(r'([a-z0-9])([A-Z])', r'\\1_\\2', s)\n    s = re.sub(r'[^a-zA-Z0-9]+', '_', s)\n    return s.strip('_').lower()"}
+{"id": 39, "gold": "我们将主动跟进处理，并第一时间反馈。"}
+{"id": 40, "gold": "各位好，会议即将开始，欢迎大家准时参加。"}
+{"id": 41, "gold": "寒风割面，今日冷到骨里。"}
+{"id": 42, "gold": "[\"2025-10-01\"]"}
+{"id": 43, "gold": "{\"user\": {\"id\": 1, \"name\": \"Alice\"}}"}
+{"id": 44, "gold": "优化资源配额\n合并低效任务\n预留实例降本"}
+{"id": 45, "gold": "这款便携相机轻而有力，随身装进口袋即可出发。快速对焦与防抖，让抓拍更稳；高感成像纯净细腻，随时记录生活里的微光与惊喜。"}
+{"id": 46, "gold": "请先复现并定位原因，提出修复建议并安排时间表。"}
+{"id": 47, "gold": "Our system shows resilience under traffic spikes."}
+{"id": 48, "gold": "def tri_area(b: float, h: float) -> float:\n    return 0.5 * b * h"}
+{"id": 49, "gold": "负面"}
+{"id": 50, "gold": "[{\"city\": \"Shanghai\", \"lat\": 31.2304, \"lng\": 121.4737}, {\"city\": \"Shenzhen\", \"lat\": 22.5431, \"lng\": 114.0579}]"}
+{"id": 51, "gold": "select to_char(created_at,'YYYY-MM') as month, sum(amount) as total_amount from orders group by to_char(created_at,'YYYY-MM') order by month"}
+{"id": 52, "gold": "查看CPU与内存\nI/O与网络延迟\n磁盘与文件句柄\n应用日志异常\n压测与火焰图剖析"}
+{"id": 53, "gold": "请按清单补充材料并标注说明，完成后提交。"}
+{"id": 54, "gold": "纯文本文件"}
+{"id": 55, "gold": "HTML"}
+{"id": 56, "gold": "8"}
+{"id": 57, "gold": "V"}
+{"id": 58, "gold": "紫色"}
+{"id": 59, "gold": "不能"}
+{"id": 60, "gold": "5"}
+{"id": 61, "gold": "月球绕地球转"}
+{"id": 62, "gold": "采用自适应纠缠净化与路由，量化退相干模型；以可验证隐私放大与随机抽检保证密钥安全；跨层联合优化时隙、链路与调度以最大化分发率。"}
+{"id": 63, "gold": "构建跨辖区先例图谱与事实要素抽取，图上路径生成推理链；加入时效与冲突判别器；全链路留痕与对比证据，支持审计与可视化反驳。"}
+{"id": 64, "gold": "采用多重校正与组序贯边界控制Ⅰ类错误；贝叶斯分配加重采样校正选择偏差；预注册因果图与停表阈值，并公开复现脚本。"}
+{"id": 65, "gold": "建立多目标优化：死亡、变异与公平；将物流成本与接种意愿作为约束或效用；用历史数据跨国回放与情景扰动检验鲁棒性。"}
+{"id": 66, "gold": "分层随机化与盲法对照，统一设备与量表；倾向评分与工具变量处理用药混杂；多时点评估与失访建模，保证随访有效。"}
+{"id": 67, "gold": "多源感知与行为模型同化，建立不确定性传播；规则与学习混合的可解释推演；以场景脚本和预案接口确保可操作决策。"}
+{"id": 68, "gold": "采用许可库与合规标注，输出嵌入可验证水印；设立申诉与移除机制；以透明报告与激励分成平衡创新与权利。"}
+{"id": 69, "gold": "可能由更底层信息结构涌现。"}
+{"id": 70, "gold": "既被发明也被发现。"}
+{"id": 71, "gold": "有客观约束亦含主观价值。"}
+{"id": 72, "gold": "有限指标可近似其层次。"}
+{"id": 73, "gold": "或常见但难以接触。"}
+{"id": 74, "gold": "过滤效应与稀疏接触并存。"}
+{"id": 75, "gold": "在规模与架构上限下可能。"}
+{"id": 76, "gold": "需形式化目标与红队验证。"}
+{"id": 77, "gold": "可局部证明，整体仍存不完备性。"}

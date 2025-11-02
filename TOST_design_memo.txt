@@ -1,0 +1,49 @@
+{
+  "metric": "acc",
+  "epsilon_default": 0.01,
+  "epsilon_map": "(default for all strata)",
+  "alpha": 0.05,
+  "equivalence_mode": false,
+  "bootstrap_B": 4000,
+  "seed": 42,
+  "strata_mode": "passthrough",
+  "mbb_block_global": 0,
+  "mbb_sensitivity_candidates": [
+    5,
+    10,
+    20
+  ],
+  "per_stratum_method_block": {
+    "general": {
+      "method": "mbb",
+      "mbb_block": 4
+    },
+    "json": {
+      "method": "mbb",
+      "mbb_block": 2
+    }
+  },
+  "weight_target": "gateway",
+  "poststrat_weights": {
+    "general": 0.815789,
+    "json": 0.184211
+  },
+  "hard_guard_json": {
+    "json_fail_baseline": 0.0,
+    "json_fail_gateway": 0.0,
+    "json_guard_pass": true
+  },
+  "min_n": 10,
+  "design_notes": "",
+  "conclusion": {
+    "fdr_gate_pass": true,
+    "json_guard_pass": true,
+    "overall_pass_noninferior": true,
+    "overall_pass_equiv": true
+  },
+  "reminders": [
+    "若任一关键层 FDR 后未通过 ⇒ 总体失败（2.2）",
+    "建议对低样本(low_n)分层扩容或合并；报告中已标注",
+    "功效为近似值；如需严格样本量，请在方案阶段用事前功效分析/保留效应论证"
+  ]
+}

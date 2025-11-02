@@ -1,0 +1,77 @@
+{"id": 1, "regex_any": ["[\\s\\S]+"], "prompt": "用一句话解释量子纠缠是什么？（只给答案，≤30字）"}
+{"id": 2, "must_include": ["\"name\"", "\"score\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "把下面姓名与分数解析为按score降序的JSON数组（name,score）：张三,89；李四 , 95； 王 五,76🙂（只输出JSON）"}
+{"id": 3, "regex_any": ["[\\s\\S]{2,}"], "prompt": "把“海浪持续拍打岸边，形成细小的水雾”改写成更生动的一句文案（≤25字）。只给一句。"}
+{"id": 4, "must_include": ["def sort_desc"], "regex_any": ["return\\s*"], "prompt": "写一个5行Python函数，将列表按数值降序返回，函数名sort_desc，含类型注解（只给代码）。"}
+{"id": 5, "regex_any": ["[\\s\\S]{2,}"], "prompt": "把“还一丁点寒意重，必先排寒”翻译成现代白话，给出2个不同译法（各≤20字）。"}
+{"id": 6, "must_include": ["\"company\"", "\"date\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "从文本中提取公司与日期，输出JSON数组[{company,date}]：小米公司将于2025/10/01发布新品；华星科技预计2026年Q1实现量产。"}
+{"id": 7, "regex_any": ["[\\s\\S]{2,}"], "prompt": "给出西安2天行程，每天列3个景点与理由（每条≤15字）。只给列表。"}
+{"id": 8, "regex_any": ["时延|延迟"], "prompt": "在120字以内概述低轨卫星如何降低互联网时延（只给段落）。"}
+{"id": 9, "must_include": ["@", "."], "prompt": "写一个邮箱正则（regex），并给出3个可匹配与3个不可匹配的例子（各列表）。"}
+{"id": 10, "regex_any": ["[Pp]95"], "prompt": "作为SRE，列出“接口P95抖高”应急检查清单5条（要点式，每条≤12字）。"}
+{"id": 11, "must_include": ["\"name\"", "\"age\"", "\"city\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "根据键值生成严格JSON：name,张三; age,28; city,杭州（只输出JSON）。"}
+{"id": 12, "must_include": ["select", "from"], "regex_any": ["group\\s*by|order\\s*by", "count\\s*\\("], "prompt": "写SQL：从orders统计每个用户订单数，取Top 3用户（只给SQL）。"}
+{"id": 13, "regex_any": ["temp|温度|top_p|核采样"], "prompt": "解释LLM的temperature与top_p区别，各≤20字。只给要点。"}
+{"id": 14, "must_include": ["\"summary\"", "\"sentiment\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "把下段话提取为结构化JSON（summary, sentiment∈{pos,neu,neg}）：产品发得太慢，大家不满意，但客服响应很快。"}
+{"id": 15, "regex_any": ["v1\\.10\\.0\\s*,\\s*v1\\.9\\.0\\s*,\\s*v1\\.8\\.5"], "prompt": "按发布时间从新到旧对版本排序：v1.9.0, v1.10.0, v1.8.5（只输出逗号分隔顺序）。"}
+{"id": 16, "regex_any": ["变暖|升温"], "prompt": "给10岁小朋友讲什么是气候变暖？（≤50字，避免恐吓）。"}
+{"id": 17, "regex_any": ["[\\s\\S]{2,}"], "prompt": "把“风把云掀开一条缝，露出一点金”改写成现代诗，一行，≤18字。"}
+{"id": 18, "regex_any": ["没有银弹|银色子弹|software|软件"], "prompt": "把英语句子 \"No silver bullet in software.\" 翻译成中文，给2种风格。"}
+{"id": 19, "regex_any": ["[\\s\\S]{2,}"], "prompt": "写3条提升写作专注的小技巧（每条≤12字）。只给列表。"}
+{"id": 20, "regex_any": ["round\\(.*?,\\s*2\\)|format\\(.*?,\\s*['\\\"]\\.2f['\\\"]\\)|:\\.2f"], "prompt": "把两数相除取两位小数，Python一行写法（只给代码）。"}
+{"id": 21, "must_include": ["\"task\"", "\"status\"", "\"started_at\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "输出一个JSON对象：包括字段task, status, started_at（ISO日期字符串）。"}
+{"id": 22, "regex_any": ["抱歉|理解|辛苦|我们已|将尽快"], "prompt": "把“请尽快处理客户投诉”改写得更有同理心，≤25字。"}
+{"id": 23, "must_include": ["select", "from"], "regex_any": ["where|having", ">\\s*1000"], "prompt": "写SQL：过去7天内每用户总金额>1000的用户，输出user_id,total_amount，降序（只给SQL）。"}
+{"id": 24, "regex_any": ["比喻|象征|理想|困难|前路|信心"], "prompt": "把“长风破浪会有时，直挂云帆济沧海”解释其比喻意义（≤30字）。"}
+{"id": 25, "must_include": ["\"title\"", "\"author\"", "\"year\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "生成一个JSON数组，包含3本书：title, author, year（只输出JSON）。"}
+{"id": 26, "must_include": ["\"first\"", "\"last\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "把下列英文人名标准化为JSON：Ada Lovelace; Alan Turing; Grace Hopper（fields: first,last）（只输出JSON）。"}
+{"id": 27, "must_include": ["def "], "regex_any": ["sorted\\("], "prompt": "给出一个把列表去重并升序的Python函数（只给代码）。"}
+{"id": 28, "regex_any": ["\\\\d\\{11\\}|\\[0-9\\]"], "prompt": "写一个手机号正则，满足中国大陆11位，允许中间有空格或短横线；给3个匹配与3个不匹配示例（各列表）。"}
+{"id": 29, "regex_any": ["登录|账号|帐户"], "prompt": "请把 \"user said: I can't login\" 归类为问题类型，输出中文标签（≤6字），只给标签。"}
+{"id": 30, "regex_any": ["[\\s\\S]{2,}"], "prompt": "写3句鼓励同事的短句（各≤16字）。"}
+{"id": 31, "must_include": ["\"street\"", "\"city\"", "\"zip\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "把文本地址解析为JSON（street, city, zip）：No.88 West Rd, Hangzhou 310000（只输出JSON）。"}
+{"id": 32, "must_include": ["\"name\"", "\"price\"", "\"in_stock\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "生成一个JSON：product(name, price, in_stock)（只输出JSON）。"}
+{"id": 33, "regex_any": ["边缘计算|终端|延迟|带宽"], "prompt": "提炼要点≤120字（只给要点）。文本：边缘计算把数据处理从中心云前移到终端附近，可降低延迟与带宽占用；但分布式管理与安全加固成为新挑战。典型场景包括工控、车联网与AR渲染。"}
+{"id": 34, "regex_any": ["\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "把列表去重并升序输出为JSON数组：3, 2, 2, 10, -1, 3（只输出JSON）。"}
+{"id": 35, "regex_any": ["请|麻烦|劳烦|烦请"], "prompt": "把下句扩写为更礼貌的话（≤30字）：你把报告发我。"}
+{"id": 36, "must_include": ["select", "from"], "regex_any": ["where|having", ">\\s*1000"], "prompt": "写SQL：近7天每用户订单总额>1000的用户，输出user_id与total_amount，按总额降序（只给SQL）。"}
+{"id": 37, "must_include": ["\"city\"", "\"lat\"", "\"lng\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "输出一个JSON：包含字段city, lat, lng（只输出JSON）。"}
+{"id": 38, "must_include": ["def "], "regex_any": ["snake|_case"], "prompt": "写一个函数把字符串转蛇形命名（snake_case），只给Python代码。"}
+{"id": 39, "regex_any": ["我们|将|主动|跟进|反馈"], "prompt": "把“请您耐心等待处理结果”改写为更积极主动的表达（≤25字）。"}
+{"id": 40, "regex_any": ["欢迎|开始|各位|大家|会议"], "prompt": "为远程会议写一段30字以内的开场白。"}
+{"id": 41, "regex_any": ["冷|寒"], "prompt": "把“今天真冷啊”改写成更文学化的一句（≤20字）。"}
+{"id": 42, "regex_any": ["\\[\\s*.*\\d{4}-\\d{2}-\\d{2}.*\\s*\\]"], "stratum": "json", "prompt": "从下面文本抽取日期为ISO格式并输出JSON数组：周三开会，10月1日发布，明年Q1复盘。"}
+{"id": 43, "must_include": ["\"user\"", "\"id\"", "\"name\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "输出JSON：包括字段user(id:int, name:str)（只输出JSON）。"}
+{"id": 44, "regex_any": ["成本|费用|开支|节约|降本"], "prompt": "写3条节约成本的小建议（每条≤12字）。只给列表。"}
+{"id": 45, "regex_any": ["相机|便携|轻|随身|拍摄"], "prompt": "写一段 40–80 字的产品文案，主题是便携相机。"}
+{"id": 46, "regex_any": ["修复|定位|复现|原因|建议"], "prompt": "把“请你尽快修复这个bug”改写为更建设性的表达（≤25字）。"}
+{"id": 47, "must_include": ["resilience"], "prompt": "给出一个英语句子，包含单词resilience，≤15词。"}
+{"id": 48, "must_include": ["def "], "regex_any": ["\\*\\s*0\\.5|0\\.5\\s*\\*|/\\s*2"], "prompt": "写一个计算三角形面积的Python函数（只给代码）。"}
+{"id": 49, "regex_any": ["负面|负向|消极"], "prompt": "把文本分类为：正面/中性/负面，只给一个中文标签。文本：服务一般，价格偏高。"}
+{"id": 50, "must_include": ["\"lat\"", "\"lng\""], "regex_any": ["\\{[\\s\\S]*\\}|\\[[\\s\\S]*\\]"], "stratum": "json", "prompt": "输出一个JSON数组：包含2个城市与经纬度（只输出JSON）。"}
+{"id": 51, "must_include": ["select", "from"], "regex_any": ["group\\s*by"], "prompt": "写SQL：按月汇总订单总额，输出month,total_amount（只给SQL）。"}
+{"id": 52, "regex_any": ["CPU|内存|I/?O|网络|磁盘|监控|日志|压测|火焰图|剖析"], "prompt": "针对“系统卡顿”，列5条定位思路（每条≤12字）。只给列表。"}
+{"id": 53, "regex_any": ["补充|材料|提交|说明|清单"], "prompt": "把“请补充材料后再提交”改写为更明确的指导（≤25字）。"}
+{"id": 54, "regex_any": ["文本文件|纯文本文件"], "prompt": "常用文件扩展名txt表示什么文件？（只给答案）"}
+{"id": 55, "regex_any": ["\\bH[Tt][Mm][Ll]\\b|超文本标记语言"], "prompt": "网页常用的标记语言叫什么？（只给答案）"}
+{"id": 56, "regex_any": ["8\\s*比特|8\\s*位|\\b8\\b"], "prompt": "计算机中1字节等于多少比特？（只给答案）"}
+{"id": 57, "regex_any": ["\\b[Vv]\\b"], "prompt": "电的单位伏特符号是什么？（只给答案）"}
+{"id": 58, "regex_any": ["紫|品红"], "prompt": "红色与蓝色混合成什么颜色？（只给答案）"}
+{"id": 59, "regex_any": ["不能|不会|不行"], "prompt": "企鹅能飞吗？（只给答案）"}
+{"id": 60, "regex_any": ["\\b5\\b|五"], "prompt": "地球有几个大洋？（只给答案）"}
+{"id": 61, "regex_any": ["月球.*绕.*地球.*转"], "prompt": "月球绕地球转还是地球绕月球转？（只给答案）"}
+{"id": 62, "regex_any": ["[\\s\\S]{10,}"], "prompt": "面向量子互联网的卫星—地面中继协同网络，如何在有限纠错资源与强去相干环境中最大化纠缠分发率，同时保证全网密钥生成的可验证信息论安全？"}
+{"id": 63, "regex_any": ["[\\s\\S]{10,}"], "prompt": "对法律检索与论证生成系统，如何将先例图谱、事实要素与可视化推理链融合，确保跨辖区冲突与时效性被正确处理，且模型输出可被审计与反驳？"}
+{"id": 64, "regex_any": ["[\\s\\S]{10,}"], "prompt": "在序贯自适应临床试验中，如何同时控制I类错误与后验选择偏差，使早停与多臂切换不破坏因果解释，并提供透明的政策转化阈值与复现脚本？"}
+{"id": 65, "regex_any": ["[\\s\\S]{10,}"], "prompt": "全球疫苗稀缺分配如何以多目标优化纳入死亡减少、变异抑制与公平指标，将执行成本与接种意愿内生化处理，并对策略鲁棒性进行跨国回放验证？"}
+{"id": 66, "regex_any": ["[\\s\\S]{10,}"], "prompt": "针对抑郁症数字疗法的有效性评估，如何在多站点、异质设备与强安慰剂效应环境下设计严格RCT，处理并用药混杂并保证长期随访有效？"}
+{"id": 67, "regex_any": ["[\\s\\S]{10,}"], "prompt": "在城市数字孪生用于应急管理时，如何融合多源时空数据与人群行为模型，量化误差传播并确保实时推演既可解释又对指挥决策具有操作性？"}
+{"id": 68, "regex_any": ["[\\s\\S]{10,}"], "prompt": "面对版权溯源困难的跨模态生成，如何在训练数据不可完全追踪的现实中，通过许可协议、来源标注与可验证水印的组合治理，平衡创新激励、权利保护与执行可行性？"}
+{"id": 69, "regex_any": ["[\\s\\S]{5,}"], "prompt": "时空是涌现的吗？"}
+{"id": 70, "regex_any": ["[\\s\\S]{5,}"], "prompt": "数学是被发明吗？"}
+{"id": 71, "regex_any": ["[\\s\\S]{5,}"], "prompt": "道德可客观吗？"}
+{"id": 72, "regex_any": ["[\\s\\S]{5,}"], "prompt": "意识有量化指标吗？"}
+{"id": 73, "regex_any": ["[\\s\\S]{5,}"], "prompt": "外星生命常见吗？"}
+{"id": 74, "regex_any": ["[\\s\\S]{5,}"], "prompt": "费米悖论真解何在？"}
+{"id": 75, "regex_any": ["[\\s\\S]{5,}"], "prompt": "强AI会涌现吗？"}
+{"id": 76, "regex_any": ["[\\s\\S]{5,}"], "prompt": "AGI可验证安全吗？"}
+{"id": 77, "regex_any": ["[\\s\\S]{5,}"], "prompt": "对齐可证明吗？"}

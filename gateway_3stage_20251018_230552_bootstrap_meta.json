@@ -1,0 +1,33 @@
+{
+  "B": 1000,
+  "ci_method": "bca",
+  "seed": 285182079,
+  "resample_unit": "request",
+  "block_len": null,
+  "censoring_mode": "KM / SLO-cap",
+  "co_params": {
+    "method": "periodic_fill",
+    "period_ms": 1000,
+    "max_fills": 120
+  },
+  "estimator": {
+    "offline": "HD+Bootstrap",
+    "online": "t-digest",
+    "tdigest_compression": 200,
+    "tdigest_version": "unknown"
+  },
+  "FDR": {
+    "method": "BH-95",
+    "q": 0.1
+  },
+  "stratification": [
+    "task",
+    "ctx_bucket",
+    "tool_use",
+    "provider/model",
+    "region/az",
+    "cold_warm",
+    "cache_hit"
+  ],
+  "weights_file": null
+}

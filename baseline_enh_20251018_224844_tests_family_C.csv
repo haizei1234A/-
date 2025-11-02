@@ -1,0 +1,2 @@
+family,stratum,n_need,x_fail,raw_p,q_value,reject
+C,general|short|False|ollama/enh|local|local-az|warm|False|False,0,0,,1.0,False

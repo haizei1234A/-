@@ -1,0 +1,4 @@
+family,stratum,p95_guard_delta,g95,b95,raw_p,q_value,reject
+B,general|short|False|ollama/enh|local|local-az|warm|False|False,0.1,2418.3329569075127,,,1.0,False
+B,general|short|False|ollama/light|local|local-az|warm|False|False,0.1,1058.8062491428295,,,1.0,False
+B,general|short|False|ollama/std|local|local-az|warm|False|False,0.1,1554.8939681142556,,,1.0,False

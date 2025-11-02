@@ -1,0 +1,2 @@
+metric,scope,mean_diff,ci95,p_noninferior,p_not_superior,pass_noninferior,pass_equiv,fdr_gate_pass,json_guard_pass
+acc,overall_poststrat,0.0,"[0.000000, 0.000000]",0.0,0.0,True,True,True,True
