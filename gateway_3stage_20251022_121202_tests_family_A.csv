@@ -1,0 +1,4 @@
+family,stratum,epsilon_q,mean_g,mean_b,diff_g_minus_b,raw_p,n_gateway,n_baseline,q_value,reject,pass_equiv,note
+A,general|short|False|ollama/enh|local|local-az|warm|False|False,0.01,0.0,0.0,0.0,0.0,77,499,0.0,True,True,
+A,general|short|False|ollama/light|local|local-az|warm|False|False,0.01,,,,,12,0,1.0,False,False,empty stratum
+A,general|short|False|ollama/std|local|local-az|warm|False|False,0.01,,,,,410,0,1.0,False,False,empty stratum

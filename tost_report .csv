@@ -1,0 +1,2 @@
+metric,stratum,n,low_n,weight,epsilon,mean_diff,ci95,p_noninferior,p_not_superior,pass_noninferior,pass_equiv,method,mbb_block,ci_width,se_approx,posthoc_power,n_factor_for_80pwr,mbb_sensitivity,pass_noninferior_fdr
+acc,general,38,False,1.0,0.01,0.0,"[0.000000, 0.000000]",0.0,0.0,True,True,mbb,3,0.0,0.0,1.0,1.0,"{'5': 0.0, '10': 0.0, '20': 0.0}",True
